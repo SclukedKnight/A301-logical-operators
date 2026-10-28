@@ -26,3 +26,14 @@ Enter a number: 4
 Enter another number: 25
 4 is not a factor of 25
 """
+
+num1 = int(input("Please enter a number: "))
+num2 = int(input("Please enter a number: "))
+
+list = [num1, num2]
+list.sort()
+
+if list[1] / list[0] == int(list[1] / list[0]):
+    print(f"{list[0]} is factorable from {list[1]}")
+else:
+    print(f"{list[0]} isn't factorable from {list[1]}")

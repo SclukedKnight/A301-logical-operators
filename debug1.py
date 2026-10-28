@@ -6,7 +6,7 @@ find the 2 errors in this program.
 
 age = 10
 
-if age > 12:
-print("You are a teenager")
+if age > 12 and age < 18:
+    print("You are a teenager")
 else:
-print("You are not a teenager")
+    print("You are not a teenager")

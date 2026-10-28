@@ -31,3 +31,14 @@ Enter a number: 8
 Enter a number: 64
 64 is both a perfect square and divisible by 2.
 """
+num = float(input("Enter number to be checked: "))
+
+if not num < 0:
+    if round(num ** (1/2)) == int(num ** (1/2)) and num % 2 == 0:
+        print("This number is a perfect square and divisable by 2")
+    elif round(num ** (1/2)) == int(num ** (1/2)) and not num % 2 == 0:
+        print("This numver is a perfect square and NOT divisable by 2")
+    elif not round(num ** (1/2)) == int(num ** (1/2)) and num % 2 == 0:
+        print("This isn't a perfect square but is divisable by 2")
+    else:
+        print("This number ins't a perfecr square or divisable by 2")

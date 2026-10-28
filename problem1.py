@@ -26,3 +26,9 @@ Enter a number: 16
 16 is not frue
 """
 
+num = int(input("Please enter an intiger to see if it's frue: "))
+
+if (num / 6) == int(num / 6) and not (num / 8) == int(num / 8):
+    print(f"{num} is fure!")
+else:
+    print(f"{num} isn't fure")

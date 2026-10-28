@@ -30,3 +30,15 @@ Enter an integer=>4
 Enter an integer=>2
 2,4,5 do not form a Pythagorean triple
 """
+
+num1 = int(input("Please enter a number: "))
+num2 = int(input("Please enter a number: "))
+num3 = int(input("Please enter a number: "))
+
+list = [num1, num2, num3]
+list.sort()
+
+if list[0] ** 2 + list[1] ** 2 == list[2] ** 2:
+    print(f"{list[0]}, {list[1]}, {list[2]} is a pythagorm triple")
+else:
+    print(f"{list[0]}, {list[1]}, {list[2]} isn't a pythagorm triple")
